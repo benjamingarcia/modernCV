@@ -239,6 +239,8 @@
 % defines additional personal information (optional)
 % usage: \extrainfo{<text>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
+\newcommand*{\twitter}[2]{\def\@twitter{#1}\def\@twitterurl{#2}}
+\newcommand*{\github}[2]{\def\@github{#1}\def\@githuburl{#2}}
 
 % colors
 \definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black
@@ -265,6 +267,8 @@
 \newcommand*{\faxphonesymbol}{}
 \newcommand*{\emailsymbol}{}
 \newcommand*{\homepagesymbol}{}
+\newcommand*{\twittersymbol}{}
+\newcommand*{\githubsymbol}{}
 
 % fonts
 \AtBeginDocument{\normalfont\color{color0}}

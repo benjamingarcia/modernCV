@@ -13,6 +13,7 @@
 \moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvicons{awesome}
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -27,12 +28,13 @@
 \name{Benjamin}{Garcia}
 \title{Ingénieur développeur}                               % optional, remove / comment the line if not wanted
 \address{17 rue des amandiers}{34160 Castries}%{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+33~(0)~678~866-543}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{06-78-86-65-43}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{benjamin82.garcia@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{benjamingarcia.github.io}                         % optional, remove / comment the line if not wanted
-\extrainfo{twitter : https://twitter.com/benjamingarcia2}                 % optional, remove / comment the line if not wanted
+\homepage{benjamingarcia.github.io}
+\twitter{@benjamingarcia2}{twitter.com/benjamingarcia2}       % optional, remove / comment the line if not wanted
+\github{benjamingarcia}{github.com/benjamingarcia}                  % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -53,68 +55,80 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Expériences}
+
+    \cventry{2012--}{Ingénieur Développeur}{Géomatys}{Montpellier}{}{Société de service spécialisée dans le traitement de l'information spatiale.
+        \begin{itemize}
+            \item Support et developpement autour de Liferay pour les projets Medpan, Seas-Gabon, Ose-guyamapa et Geosud;
+            \item Développement d'applications de diffusion de données et metadonnées spatiales supportant les standards OGC;
+            \item Gestion de build et de déploiement d'application via Jenkins sur des serveurs tomcat;
+        \end{itemize}
+    }
+    
+    
+    \cventry{2007--2012}{Ingénieur Développeur}{ESII}{Lavérune}{}{Éditeur de logiciel autour de la gestion de flux physique, et gestion d’accueil.
+        \begin{itemize}
+            \item Gestion du projet Pôle Emploi;
+            \item Développement sur la suite logicielle eSirius : prise de rendez-vous par internet, envois de message (mail et sms),…
+        \end{itemize}
+    }
+    
+        
+    \cventry{2007}{Stage Ingénieur Développeur}{Nelis}{Montpellier}{}{Editeur de la suite logicielle Nelis Selfcare – CRM/GRC, XRM, dans le domaine du B TO B.%
+        \begin{itemize}%
+            \item Optimisation du système de recherche sur l’outil Nëlis Selfcare:
+              \begin{itemize}%
+                  \item Travaux de recherche sur l’analyse de la phonétique française;
+                  \item État de l'art des techniques de Traitement Automatique du Langage Naturel (analyse sémantique, syntaxique, lexicale);
+                  \item Prototypes, tests et application des techniques TALN connues sur l’application Nëlis Selfcare;
+              \end{itemize}
+        \end{itemize}
+    }
+
 \section{Etude}
-\cventry{2001}{Baccalauréat}{Lycée Dhuoda}{Nîmes}{}{STI génie électronique}
-\cventry{2002}{1er année BTS}{Lycée Dhuoda}{Nîmes}{}{Electronique}
-\cventry{2004}{BTS IRIS}{Lycée Dhuoda}{Nîmes}{}{Informatique et Réseau dans les Industries et les Services techniques} 
-\cventry{2005}{Licence}{Université Montpellier 2}{}{}{Spécialité informatique}
-\cventry{2007}{Master}{Université Montpellier 2}{}{}{Validation des parcours TOIL (Technologies Objet et Ingénierie Logicielle) et IDI (Interaction Document Information). Rédaction d'un mémoire sur les méthodes de recherche sur une base de connaissances}
+    \cventry{2007}{Master}{Université Montpellier 2}{}{}{Validation des parcours TOIL (Technologies Objet et Ingénierie Logicielle) et IDI (Interaction Document Information). Rédaction d'un mémoire sur les méthodes de recherche sur une base de connaissances}
+    \cventry{2005}{Licence}{Université Montpellier 2}{}{}{Spécialité informatique}
+    \cventry{2004}{BTS IRIS}{Lycée Dhuoda}{Nîmes}{}{Informatique et Réseau dans les Industries et les Services techniques}
+    \cventry{2002}{BTS ELEC}{Lycée Dhuoda}{Nîmes}{}{$1^{ère}$ année du BTS éléctronique}
+    \cventry{2001}{Baccalauréat}{Lycée Dhuoda}{Nîmes}{}{STI Génie électronique}
+
+\section{Compétences spécifiques}
+    \subsection{Languages}
+        \cvitem{Java}{Très bon niveau. Développement principalement à ESII et Geomatys. Utilisation de différents framework dont Hibernate, Spring, joda-time (JDK8 time), Xtream, Juzu, wisdom\...}
+        \cvitem{Javascript}{Développement d'application frontend avec AngularJS et système de build Grunt. Utilisation de Jquery (event, Ajax, ...) sur différentes application;}
+        \cvitem{CSS}{Utilisation de précompilateur LESS et de la librairie Bootstrap;}
+        \cvitem{C/C++}{Bon niveau, avec un projet de logiciel embarqué pour la manipulation d'un bras mécanique, l'implémentation d'une IA pour un jeu d'Awalé et modélisation d'une machine de Turing}
+        \cvitem{PHP5}{Bon niveau. Utilisé principalement pendant le stage chez Nëlis}
+        
+    
+    \subsection{Systèmes}
+        \cvitem{Windows}{Windows 98 à 8}
+        \cvitem{Unix}{CentOS, Debian, Ubuntu, Mint, Mandriva, Fedora, AIX 5, MAC OS X}
+    
+    \subsection{Serveurs}
+        \cvitem{Serveur d'applications}{Tomcat 5 à 8 avec Apache en front, Websphere, Weblogic (cluster)}
+        \cvitem{Base de données}{Mysql, Oracle (développement de procédures stockées), PostgresQL}
+    
+    \subsection{Autres}
+        \cvitem{Outils}{Eclipse, IntelliJ, Vim, Shell, Sublime Text 3, Visual Studio Express, git, mercurial, jenkins, maven}
+        \cvitem{Divers}{The Gimp, Adobe Photoshop, Adobe Premiere CS6, irssi, evernote}
+
+\section{Langues}
+    \cvitemwithcomment{Anglais}{professionnel}{Je peux communiquer par écrit et me faire comprendre à l'oral}
+    \cvitemwithcomment{Espagnol}{bon niveau}{DIFF durant 3 ans de 2009 à 2011}
+
+\section{Centre d'intérêts}
+    \cvitem{Sport}{VTT, Natation, Plongée (OpenWater), Basket}
+    \cvitem{Cinéma}{Science Fiction et films d'anticipation}
+    \cvitem{Musique}{Green Day, Shaka Ponk, Dionysos, Muse, IAM, Mellismel, Billy Talent, Mauresca Fraca Dub, Merzhin, Rodrigo y Gabriella, Yodelice}
 
 
-\section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item Achievement 1;
-\item Achievement 2, with sub-achievements:
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3.
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
-
-\section{Languages}
-\cvitemwithcomment{Language 1}{Skill level}{Comment}
-\cvitemwithcomment{Language 2}{Skill level}{Comment}
-\cvitemwithcomment{Language 3}{Skill level}{Comment}
-
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-
-\section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
-
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-\section{References}
-\begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-\end{cvcolumns}
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person %2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART

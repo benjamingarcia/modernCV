@@ -107,6 +107,8 @@
       \phonesdetails% needed to be pre-rendered as loops and tabulars seem to conflict
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@twitter}}{}{\makenewline\twittersymbol\httplink[\@twitter]{\@twitterurl}}%
+      \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsymbol\httplink[\@github]{\@githuburl}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}%
     \end{tabular}
   }%
@@ -259,6 +261,8 @@
         \makenewline\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}%
       \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
       \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httplink{\@homepage}}%
+      \ifthenelse{\isundefined{\@twitter}}{}{\makenewline\twittersymbol\httplink[\@twitter]{\@twitterurl}}%
+      \ifthenelse{\isundefined{\@github}}{}{\makenewline\githubsymbol\httplink[\@github]{\@githuburl}}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}%
     \end{minipage}\\[1em]
   % recipient block
